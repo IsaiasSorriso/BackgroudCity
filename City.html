@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="City.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Animation City</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sol"></div>
+        <div class="bg">
+            <img src="img/police_car.gif" class="car1">
+            <img src="img/police_car.gif" class="car2">
+        </div>
+    </div>
+    <script>
+        const sol = document.querySelector('.sol');
+        const body = document.querySelector('body');
+        sol.onclick = function(){
+            body.classList.toggle('dark');
+        }
+    </script>
+</body>
+</html>
